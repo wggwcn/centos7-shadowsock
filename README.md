@@ -2,7 +2,6 @@
 1安装shadowsocks：逐条输入</br>
 1.输入  wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh 
 
-
 2.输入   chmod +x shadowsocks.sh</br>
 3.输入      ./shadowsocks.sh 2>&1 | tee shadowsocks.log</br>
 2 添加端口到防火墙：
