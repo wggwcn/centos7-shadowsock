@@ -1,8 +1,8 @@
 # centos7-shadowsock
 1安装shadowsocks：逐条输入</br>
-<code>wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
-chmod +x shadowsocks.sh
-./shadowsocks.sh 2>&1 | tee shadowsocks.log</code></br>
+<code>1.   <br> wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
+2. chmod +x shadowsocks.sh</br>
+<br>3.    ./shadowsocks.sh 2>&1 | tee shadowsocks.log</code></br>
 2 添加端口到防火墙：
 比如开放8989端口</br>
 2.1<code>firewall-cmd --permanent --add-port=8989/tcp</code>
