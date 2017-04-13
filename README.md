@@ -2,6 +2,8 @@
 1安装shadowsocks：逐条输入</br>
 1.输入  wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh 
 
+-----------------------------------------------------
+
 2.输入   chmod +x shadowsocks.sh</br>
 3.输入      ./shadowsocks.sh 2>&1 | tee shadowsocks.log</br>
 2 添加端口到防火墙：
@@ -10,6 +12,9 @@
 载入新的防火墙端口设置</br>
 2.2<code>firewall-cmd --reload</code></br>
 单个配置文件路径：/etc/shadowsocks.json 修改文件用vi /etc/shadowsocks.json 输入i 就可以修改了 然后输入:wq 保存
+
+-----------------------------------------------------
+
 <link rel='stylesheet' type='text/css' href='http://tools.oschina.net/js/syntaxhighlighter_3.0.83/styles/shCoreDjango.css'/><div id="highlighter_449060" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">{</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"server"</code><code class="js plain">:</code><code class="js string">"0.0.0.0"</code><code class="js plain">,</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"server_port"</code><code class="js plain">:8989,</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"local_address"</code><code class="js plain">:</code><code class="js string">"127.0.0.1"</code><code class="js plain">,</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"local_port"</code><code class="js plain">:1080,</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"password"</code><code class="js plain">:</code><code class="js string">"yourpassword"</code><code class="js plain">,</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"timeout"</code><code class="js plain">:300,</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"method"</code><code class="js plain">:</code><code class="js string">"aes-256-cfb"</code><code class="js plain">,</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js string">"fast_open"</code><code class="js plain">:&nbsp;</code><code class="js keyword">false</code></div><div class="line number10 index9 alt1"><code class="js plain">}</code></div></div></td></tr></tbody></table></div>
 </br>
 多个个配置文件路径：/etc/shadowsocks.json 修改文件用vi /etc/shadowsocks.json 输入i进入修改 然后输入:wq 保存</br>
