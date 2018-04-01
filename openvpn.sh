@@ -417,9 +417,9 @@ key-direction 1
 verb 3" > /etc/openvpn/client-common.txt
 	# Generates the custom client.ovpn
 	newclient "$CLIENT"
-	echo "OPENVPN"
-	echo "恭喜安装成功!"
-	echo ""
-	echo "客户端配置文件在当前目录下，请使用XFTP下好后导入vpngate客户端就可以了" ~/"$CLIENT.ovpn"
-	echo "如果您要添加多用户请重新允许此脚本"
+	echo -e  "OPENVPN"
+	echo -e  "恭喜安装成功!"
+	echo -e ""
+	echo -e "客户端配置文件在当前目录下，请使用XFTP下好后导入vpngate客户端就可以了" ~/"$CLIENT.ovpn"
+	echo -e "如果您要添加多用户请重新允许此脚本"
 fi
