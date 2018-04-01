@@ -1,5 +1,6 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
 
 
 # Detect Debian users running the script with "sh" instead of bash
@@ -413,7 +414,15 @@ verb 3" > /etc/openvpn/client-common.txt
 	newclient "$CLIENT"
 	echo -e  "OPENVPN"
 	echo -e  "恭喜安装成功!"
-	echo -e ""
+	
 	echo -e "客户端配置文件在当前目录下，请使用XFTP下好后导入vpngate客户端就可以了" ~/"$CLIENT.ovpn"
-	echo -e "如果您要添加多用户请重新允许此脚本"
+	
 fi
+echo "#############################################################"
+echo "#                    OPENVPN                                 #"
+echo "# 恭喜OPENVPN已经搭建成功                                      #"
+echo "# 请在/root目录下载您刚生成的文件然后导入openvpn客户端           #"
+echo "# 如果要添加多用户，可以重复运行此脚本                           #"
+echo "#############################################################"
+
+
