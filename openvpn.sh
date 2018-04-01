@@ -1,4 +1,5 @@
 #!/bin/bash
+curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
 sudo apt-get install docker.io
 # 配置文件所在目录
 CONFIG_DIR='/home/ff/ovpn-data-example'
