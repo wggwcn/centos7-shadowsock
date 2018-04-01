@@ -69,11 +69,11 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 		echo "Looks like OpenVPN is already installed"
 		echo ""
 		echo "What do you want to do?"
-		echo "   1) Add a new user"
-		echo "   2) Revoke an existing user"
-		echo "   3) Remove OpenVPN"
-		echo "   4) Exit"
-		read -p "Select an option [1-4]: " option
+		echo "   1) 添加新用户"
+		echo "   2) 删除用户"
+		echo "   3) 删除OPENVPN"
+		echo "   4) 退出"
+		read -p "选着数字然后按回车 [1-4]: " option
 		case $option in
 			1) 
 			echo ""
@@ -412,17 +412,12 @@ key-direction 1
 verb 3" > /etc/openvpn/client-common.txt
 	# Generates the custom client.ovpn
 	newclient "$CLIENT"
-	echo -e  "OPENVPN"
-	echo -e  "恭喜安装成功!"
+	echo   "OPENVPN"
+	echo   "恭喜安装成功!"
 	
-	echo -e "客户端配置文件在当前目录下，请使用XFTP下好后导入vpngate客户端就可以了" ~/"$CLIENT.ovpn"
+	echo  "客户端配置文件在当前目录下，请使用XFTP下好后导入vpngate客户端就可以了" ~/"$CLIENT.ovpn"
+    echo ""
 	
 fi
-echo "#############################################################"
-echo "#                    OPENVPN                                 #"
-echo "# 恭喜OPENVPN已经搭建成功                                      #"
-echo "# 请在/root目录下载您刚生成的文件然后导入openvpn客户端           #"
-echo "# 如果要添加多用户，可以重复运行此脚本                           #"
-echo "#############################################################"
 
 
