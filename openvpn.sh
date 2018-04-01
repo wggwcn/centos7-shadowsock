@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo apt-get install docker.io
 # 配置文件所在目录
 CONFIG_DIR='/home/ff/ovpn-data-example'
 # 服务器ip
