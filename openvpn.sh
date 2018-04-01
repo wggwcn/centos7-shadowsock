@@ -184,7 +184,7 @@ else
 	echo "listening to."
 	read -p "IP address: " -e -i $IP IP
 	echo ""
-	echo "Which protocol do you want for OpenVPN connections?"
+	echo "选着要用的传输方式，建议使用UDP速度更快"
 	echo "   1) UDP (recommended)"
 	echo "   2) TCP"
 	read -p "Protocol [1-2]: " -e -i 1 PROTOCOL
@@ -197,10 +197,10 @@ else
 		;;
 	esac
 	echo ""
-	echo "What port do you want OpenVPN listening to?"
+	echo "选着需要的端口（默认1194）?"
 	read -p "Port: " -e -i 1194 PORT
 	echo ""
-	echo "Which DNS do you want to use with the VPN?"
+	echo "选着需要的DNS（默认本机DNS)"
 	echo "   1) Current system resolvers"
 	echo "   2) Google"
 	echo "   3) OpenDNS"
@@ -209,8 +209,8 @@ else
 	echo "   6) Verisign"
 	read -p "DNS [1-6]: " -e -i 1 DNS
 	echo ""
-	echo "Finally, tell me your name for the client certificate"
-	echo "Please, use one word only, no special characters"
+	echo "请输入需要创建的客户端用户"
+	echo "请别输入特殊符号和空格"
 	read -p "Client name: " -e -i client CLIENT
 	echo ""
 	echo "Okay, that was all I needed. We are ready to setup your OpenVPN server now"
@@ -419,5 +419,4 @@ verb 3" > /etc/openvpn/client-common.txt
     echo ""
 	
 fi
-
 
