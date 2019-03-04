@@ -416,7 +416,7 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo   "恭喜安装成功!"
 	
 	echo  "客户端配置文件在当前目录下，请使用XFTP下好后导入vpngate客户端就可以了" ~/"$CLIENT.ovpn"
-	echo  "重新允许此脚本可以添加用户删除用户，如果要提升网速可以顺带安装bbr"
+	echo  "重新运行此脚本可以添加用户删除用户，如果要提升网速可以顺带安装bbr"
         echo " 祝愿大家天天开心！！"
 	
 fi
